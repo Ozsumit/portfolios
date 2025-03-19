@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Design 6 - Professional</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <nav class="navbar">
+        <div class="logo">DC</div>
+        <div class="nav-links">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#work" class="nav-link">Work</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="David Cooper">David Cooper</h1>
+            <div class="typing-text">Creative Developer & Designer</div>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+                <p>Scroll Down</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="work">
+        <h2 class="section-title">Selected Works</h2>
+        <div class="work-grid">
+            <div class="work-item" data-category="web">
+                <div class="work-image">
+                    <img src="https://picsum.photos/600/400" alt="Project 1">
+                </div>
+                <div class="work-info">
+                    <h3>E-Commerce Platform</h3>
+                    <p>React, Node.js, MongoDB</p>
+                </div>
+            </div>
+            <div class="work-item" data-category="design">
+                <div class="work-image">
+                    <img src="https://picsum.photos/601/400" alt="Project 2">
+                </div>
+                <div class="work-info">
+                    <h3>Brand Identity</h3>
+                    <p>Adobe Suite, Figma</p>
+                </div>
+            </div>
+            <div class="work-item" data-category="app">
+                <div class="work-image">
+                    <img src="https://picsum.photos/602/400" alt="Project 3">
+                </div>
+                <div class="work-info">
+                    <h3>Mobile App</h3>
+                    <p>Flutter, Firebase</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2 class="section-title">About Me</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Development</h3>
+                    <div class="skill-bar" data-level="90">
+                        <div class="skill-progress"></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Design</h3>
+                    <div class="skill-bar" data-level="85">
+                        <div class="skill-progress"></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Animation</h3>
+                    <div class="skill-bar" data-level="75">
+                        <div class="skill-progress"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get in Touch</h2>
+        <form class="contact-form" id="contactForm">
+            <div class="form-group">
+                <input type="text" id="name" required>
+                <label for="name">Name</label>
+                <span class="focus-border"></span>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" required>
+                <label for="email">Email</label>
+                <span class="focus-border"></span>
+            </div>
+            <div class="form-group">
+                <textarea id="message" required></textarea>
+                <label for="message">Message</label>
+                <span class="focus-border"></span>
+            </div>
+            <button type="submit" class="submit-btn">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2024 David Cooper. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

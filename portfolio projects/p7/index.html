@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Design 5 - Minimal</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="menu-btn">
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="menu">
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Sarah Chen</h1>
+                <p class="title">UX Designer & Developer</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">GitHub</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Twitter</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Featured Projects</h2>
+            <div class="project-container">
+                <article class="project">
+                    <div class="project-info">
+                        <h3>Health App</h3>
+                        <p>A wellness tracking application</p>
+                        <span class="tag">React Native</span>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="project-info">
+                        <h3>Portfolio Generator</h3>
+                        <p>Custom portfolio builder</p>
+                        <span class="tag">Vue.js</span>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="project-info">
+                        <h3>Task Manager</h3>
+                        <p>Productivity enhancement tool</p>
+                        <span class="tag">React</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill">UI/UX Design</div>
+                <div class="skill">React</div>
+                <div class="skill">Vue.js</div>
+                <div class="skill">Node.js</div>
+                <div class="skill">Figma</div>
+                <div class="skill">TypeScript</div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Let's Connect</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" required>
+                    <label>Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea required></textarea>
+                    <label>Message</label>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuBtn = document.querySelector('.menu-btn');
+        const menu = document.querySelector('.menu');
+
+        menuBtn.addEventListener('click', function () {
+            this.classList.toggle('active');
+            menu.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a menu item
+        const menuLinks = document.querySelectorAll('.menu a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                menuBtn.classList.remove('active');
+                menu.classList.remove('active');
+            });
+        });
+    });
+</script>
+
+</html>
